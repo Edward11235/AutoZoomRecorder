@@ -1,142 +1,176 @@
-<Button>:
-    font_size: 30
-    color: 1, 1, 1, 1
-    size_hint: 0.1, 0.05
+<MainWindow>:
+    zoomid: zoomid
+    zoompassword: zoompassword
+    meetingid: meetingid
 
-<Label>:
-    font_size: 20
-    color: 1, 1, 1, 1
-    size_hint: 0.1, 0.05
+    FloatLayout:
 
-<FloatLayout>:
-    Label:
-        font_size: 65
-        size_hint: 0.2, 0.1
-        text: "Everything you need to set before using it"
-        pos_hint: {"x":0.4, "top":0.98}
+        Label:
+            font_size: 65
+            size_hint: 0.2, 0.1
+            text: "Everything you need to set before using it"
+            pos_hint: {"x":0.4, "top":0.98}
 
-    Label:
-        font_size: 40
-        size_hint: 0.2, 0.1
-        text: "Step1: Position and information"
-        pos_hint: {"x":0.1, "top":0.85}
+        Label:
+            font_size: 40
+            size_hint: 0.2, 0.1
+            text: "Step1: Position and information"
+            pos_hint: {"x":0.1, "top":0.85}
 
-    Button:
-        text: "SignIn"
-        pos_hint: {"x": 0.4, "top":0.85}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "SignIn"
+            pos_hint: {"x": 0.4, "top":0.85}
+            on_press:
+                root.position()
 
-    Button:
-        text: "Email"
-        pos_hint: {"x": 0.5, "top":0.85}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "Email"
+            pos_hint: {"x": 0.5, "top":0.85}
 
-    Button:
-        text: "Password"
-        pos_hint: {"x": 0.6, "top":0.85}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "Password"
+            pos_hint: {"x": 0.6, "top":0.85}
 
-    Button:
-        text: "KeepMe"
-        pos_hint: {"x": 0.7, "top":0.85}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "KeepMe"
+            pos_hint: {"x": 0.7, "top":0.85}
 
-    Button:
-        text: "SignIn"
-        pos_hint: {"x": 0.8, "top":0.85}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "SignIn"
+            pos_hint: {"x": 0.8, "top":0.85}
 
-    Button:
-        text: "MeetID"
-        pos_hint: {"x": 0.4, "top":0.8}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "MeetID"
+            pos_hint: {"x": 0.4, "top":0.8}
 
-    Button:
-        text: "NoAudio"
-        pos_hint: {"x": 0.5, "top":0.8}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "NoAudio"
+            pos_hint: {"x": 0.5, "top":0.8}
 
-    Button:
-        text: "Join"
-        pos_hint: {"x": 0.6, "top":0.8}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "Join"
+            pos_hint: {"x": 0.6, "top":0.8}
 
-    Button:
-        text: "Audio"
-        pos_hint: {"x": 0.7, "top":0.8}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "Audio"
+            pos_hint: {"x": 0.7, "top":0.8}
 
-    Button:
-        text: "Auto"
-        pos_hint: {"x": 0.8, "top":0.8}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "Auto"
+            pos_hint: {"x": 0.8, "top":0.8}
 
-    Button:
-        text: "PCAudio"
-        pos_hint: {"x": 0.4, "top":0.75}
+        Button:
+            font_size: 30
+            color: 1, 1, 1, 1
+            size_hint: 0.1, 0.05
+            text: "PCAudio"
+            pos_hint: {"x": 0.4, "top":0.75}
 
-    Label:
-        font_size: 40
-        size_hint: 0.2, 0.1
-        text: "Step2: id and password"
-        pos_hint: {"x":0.1, "top":0.65}
+        Label:
+            font_size: 40
+            size_hint: 0.2, 0.1
+            text: "Step2: id and password"
+            pos_hint: {"x":0.1, "top":0.65}
 
-    TextInput:
-        text: "zoom id (delete it and write yours)"
-        pos_hint: {"x":0.4, "top":0.65}
-        size_hint: 0.4, 0.05
-        id: zoomid
-        multiline: False
-        font_size: 30
+        TextInput:
+            text: "zoom id (delete it and write yours)"
+            pos_hint: {"x":0.4, "top":0.65}
+            size_hint: 0.4, 0.05
+            id: zoomid
+            multiline: False
+            font_size: 30
 
-    TextInput:
-        text: "zoom password (delete it and write yours)"
-        pos_hint: {"x":0.4, "top":0.6}
-        size_hint: 0.4, 0.05
-        id: zoompassword
-        multiline: False
-        font_size: 30
+        TextInput:
+            text: "zoom password (delete it and write yours)"
+            pos_hint: {"x":0.4, "top":0.6}
+            size_hint: 0.4, 0.05
+            id: zoompassword
+            multiline: False
+            font_size: 30
 
-    TextInput:
-        text: "meeting id (delete it and write yours)"
-        pos_hint: {"x":0.4, "top":0.6}
-        size_hint: 0.4, 0.05
-        id: meetingid
-        multiline: False
-        font_size: 30
+        TextInput:
+            text: "meeting id (delete it and write yours)"
+            pos_hint: {"x":0.4, "top":0.6}
+            size_hint: 0.4, 0.05
+            id: meetingid
+            multiline: False
+            font_size: 30
 
-    Label:
-        font_size: 40
-        size_hint: 0.2, 0.1
-        text: "Step3: meeting time (in 24h clock)"
-        pos_hint: {"x":0.1, "top":0.5}
+        Label:
+            font_size: 40
+            size_hint: 0.2, 0.1
+            text: "Step3: meeting time (in 24h clock)"
+            pos_hint: {"x":0.1, "top":0.5}
 
-    TextInput:
-        text: "start time (in xx:xx format. e.g. 15:00)"
-        pos_hint: {"x":0.4, "top":0.5}
-        size_hint: 0.4, 0.05
-        id: starttime
-        multiline: False
-        font_size: 30
+        TextInput:
+            text: "start time (in xx:xx format. e.g. 15:00)"
+            pos_hint: {"x":0.4, "top":0.5}
+            size_hint: 0.4, 0.05
+            id: starttime
+            multiline: False
+            font_size: 30
 
-    TextInput:
-        text: "end time (also in xx:xx format. e.g. 16:00)"
-        pos_hint: {"x":0.4, "top":0.45}
-        size_hint: 0.4, 0.05
-        id: endtime
-        multiline: False
-        font_size: 30
+        TextInput:
+            text: "end time (also in xx:xx format. e.g. 16:00)"
+            pos_hint: {"x":0.4, "top":0.45}
+            size_hint: 0.4, 0.05
+            id: endtime
+            multiline: False
+            font_size: 30
 
-    Label:
-        font_size: 40
-        size_hint: 0.2, 0.1
-        text: "Step4: Test"
-        pos_hint: {"x":0.1, "top":0.35}
+        Label:
+            font_size: 40
+            size_hint: 0.2, 0.1
+            text: "Step4: Test"
+            pos_hint: {"x":0.1, "top":0.35}
 
-    Label:
-        font_size: 40
-        size_hint: 0.2, 0.1
-        text: "Testing is going to start in 60 sec"
-        pos_hint: {"x":0.5, "top":0.35}
+        Label:
+            font_size: 40
+            size_hint: 0.2, 0.1
+            text: "Testing is going to start in 60 sec"
+            pos_hint: {"x":0.5, "top":0.35}
 
-    Button:
-        font_size: 50
-        size_hint: 0.2, 0.1
-        text: "Start"
-        pos_hint: {"x": 0.1, "top":0.2}
+        Button:
+            font_size: 50
+            size_hint: 0.2, 0.1
+            text: "Start"
+            pos_hint: {"x": 0.1, "top":0.2}
 
-    Label:
-        font_size: 40
-        size_hint: 0.2, 0.1
-        text: "Meeting is going to start in xx:xx"
-        pos_hint: {"x":0.5, "top":0.2}
+        Label:
+            font_size: 40
+            size_hint: 0.2, 0.1
+            text: "Meeting is going to start in xx:xx"
+            pos_hint: {"x":0.5, "top":0.2}
