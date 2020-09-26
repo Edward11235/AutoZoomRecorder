@@ -14,7 +14,7 @@
         Label:
             font_size: 40
             size_hint: 0.2, 0.1
-            text: "Step1: Position and information"
+            text: "Step1: position and information"
             pos_hint: {"x":0.1, "top":0.85}
 
         Button:
@@ -24,7 +24,7 @@
             text: "SignIn"
             pos_hint: {"x": 0.4, "top":0.85}
             on_press:
-                root.position()
+                root.add_position()
 
         Button:
             font_size: 30
@@ -32,6 +32,8 @@
             size_hint: 0.1, 0.05
             text: "Email"
             pos_hint: {"x": 0.5, "top":0.85}
+            on_press:
+                root.add_position()
 
         Button:
             font_size: 30
@@ -39,6 +41,8 @@
             size_hint: 0.1, 0.05
             text: "Password"
             pos_hint: {"x": 0.6, "top":0.85}
+            on_press:
+                root.add_position()
 
         Button:
             font_size: 30
@@ -46,6 +50,8 @@
             size_hint: 0.1, 0.05
             text: "KeepMe"
             pos_hint: {"x": 0.7, "top":0.85}
+            on_press:
+                root.add_position()
 
         Button:
             font_size: 30
@@ -53,6 +59,8 @@
             size_hint: 0.1, 0.05
             text: "SignIn"
             pos_hint: {"x": 0.8, "top":0.85}
+            on_press:
+                root.add_position()
 
         Button:
             font_size: 30
@@ -60,6 +68,8 @@
             size_hint: 0.1, 0.05
             text: "MeetID"
             pos_hint: {"x": 0.4, "top":0.8}
+            on_press:
+                root.add_position()
 
         Button:
             font_size: 30
@@ -67,6 +77,8 @@
             size_hint: 0.1, 0.05
             text: "NoAudio"
             pos_hint: {"x": 0.5, "top":0.8}
+            on_press:
+                root.add_position()
 
         Button:
             font_size: 30
@@ -74,16 +86,17 @@
             size_hint: 0.1, 0.05
             text: "Join"
             pos_hint: {"x": 0.6, "top":0.8}
+            on_press:
+                root.add_position()
 
         Button:
             font_size: 30
             color: 1, 1, 1, 1
             size_hint: 0.1, 0.05
-            font_size: 30
-            color: 1, 1, 1, 1
-            size_hint: 0.1, 0.05
             text: "Audio"
             pos_hint: {"x": 0.7, "top":0.8}
+            on_press:
+                root.add_position()
 
         Button:
             font_size: 30
@@ -91,6 +104,8 @@
             size_hint: 0.1, 0.05
             text: "Auto"
             pos_hint: {"x": 0.8, "top":0.8}
+            on_press:
+                root.add_position()
 
         Button:
             font_size: 30
@@ -98,6 +113,8 @@
             size_hint: 0.1, 0.05
             text: "PCAudio"
             pos_hint: {"x": 0.4, "top":0.75}
+            on_press:
+                root.add_position()
 
         Label:
             font_size: 40

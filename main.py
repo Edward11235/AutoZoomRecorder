@@ -5,6 +5,8 @@ from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
 from kivy.uix.screenmanager import Screen
 from pynput import mouse
+import pyautogui
+
 
 Builder.load_file("my.kv")
 
@@ -22,10 +24,11 @@ class MainWindow(Screen):
     zoompassword = ObjectProperty(None)
     meetingid = ObjectProperty(None)
 
-    def position(self):
+    def add_position(self):
         listener = mouse.Listener(on_click=on_click)
         listener.start()
         listener.join()
+
 
 class AutoZoomRecorderApp(App):
     def build(self):
