@@ -27,11 +27,11 @@ class MainWindow(Screen):
         if not pressed:
             return False  # Stop listener
 
-    def add_position(self):
+    def add_position(self, btn_name):
         listener = mouse.Listener(on_click=self.on_click)
         listener.start()
         listener.join()
-        # 把temp_x和temp_y存入数据库中
+        # 把btn_name以及对应的temp_x和temp_y存入数据库中
 
 
 class AutoZoomRecorderApp(App):
