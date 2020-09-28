@@ -38,10 +38,16 @@ class MainWindow(Screen):
 
 
 db = DataBase("info.txt")
+userdb = DataBase("user.txt")
+
 
 class AutoZoomRecorderApp(App):
     def build(self):
-        return MainWindow()
+        MW = MainWindow()
+        MW.zoomid.text = userdb.zoomid
+        MW.zoompassword.text = userdb.zoompassword
+        MW.meetingid.text = userdb.meetingid
+        return MW
 
 if __name__ == "__main__":
     AutoZoomRecorderApp().run()

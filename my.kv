@@ -140,7 +140,7 @@
 
         TextInput:
             text: "meeting id (delete it and write yours)"
-            pos_hint: {"x":0.4, "top":0.6}
+            pos_hint: {"x":0.4, "top":0.55}
             size_hint: 0.4, 0.05
             id: meetingid
             multiline: False
@@ -150,11 +150,11 @@
             font_size: 40
             size_hint: 0.2, 0.1
             text: "Step3: meeting time (in 24h clock)"
-            pos_hint: {"x":0.1, "top":0.5}
+            pos_hint: {"x":0.1, "top":0.45}
 
         TextInput:
             text: "start time (in xx:xx format. e.g. 15:00)"
-            pos_hint: {"x":0.4, "top":0.5}
+            pos_hint: {"x":0.4, "top":0.45}
             size_hint: 0.4, 0.05
             id: starttime
             multiline: False
@@ -162,7 +162,7 @@
 
         TextInput:
             text: "end time (also in xx:xx format. e.g. 16:00)"
-            pos_hint: {"x":0.4, "top":0.45}
+            pos_hint: {"x":0.4, "top":0.4}
             size_hint: 0.4, 0.05
             id: endtime
             multiline: False
@@ -172,14 +172,14 @@
             font_size: 40
             size_hint: 0.2, 0.1
             text: "Step4: "
-            pos_hint: {"x":0.1, "top":0.35}
+            pos_hint: {"x":0.1, "top":0.3}
 
         Button:
             font_size: 40
             color: 1, 1, 1, 1
             size_hint: 0.1, 0.1
             text: "Test"
-            pos_hint: {"x": 0.24, "top":0.35}
+            pos_hint: {"x": 0.24, "top":0.3}
             on_press:
 
 
@@ -187,16 +187,16 @@
             font_size: 40
             size_hint: 0.2, 0.1
             text: "Testing is going to start in 60 sec"
-            pos_hint: {"x":0.5, "top":0.35}
+            pos_hint: {"x":0.5, "top":0.3}
 
         Button:
             font_size: 50
             size_hint: 0.2, 0.1
             text: "Start"
-            pos_hint: {"x": 0.1, "top":0.2}
+            pos_hint: {"x": 0.1, "top":0.15}
 
         Label:
             font_size: 40
             size_hint: 0.2, 0.1
             text: "Meeting is going to start in xx:xx"
-            pos_hint: {"x":0.5, "top":0.2}
+            pos_hint: {"x":0.5, "top":0.15}
