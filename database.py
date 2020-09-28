@@ -27,4 +27,4 @@ class DataBase:
     def save(self):
         with open(self.filename, "w") as f:
             for btn in self.btnlist:
-                f.write(btn + ";" + self.btnlist[btn][0] + ";" + self.btnlist[btn][1] + ";" + "\n")
+                f.write(btn + ";" + self.btnlist[btn][0] + ";" + self.btnlist[btn][1] + "\n")
