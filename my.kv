@@ -2,6 +2,10 @@
     zoomid: zoomid
     zoompassword: zoompassword
     meetingid: meetingid
+    start_time: start
+    end_time: end
+    test: test
+    startapp: startapp
 
     FloatLayout:
 
@@ -156,16 +160,14 @@
             text: "start time (in xx:xx format. e.g. 15:00)"
             pos_hint: {"x":0.4, "top":0.45}
             size_hint: 0.4, 0.05
-            id: starttime
-            multiline: False
+            id: start
             font_size: 30
 
         TextInput:
             text: "end time (also in xx:xx format. e.g. 16:00)"
             pos_hint: {"x":0.4, "top":0.4}
             size_hint: 0.4, 0.05
-            id: endtime
-            multiline: False
+            id: end
             font_size: 30
 
         Label:
@@ -182,10 +184,10 @@
             pos_hint: {"x": 0.24, "top":0.3}
             on_press:
 
-
         Label:
             font_size: 40
             size_hint: 0.2, 0.1
+            id: test
             text: "Testing is going to start in 60 sec"
             pos_hint: {"x":0.5, "top":0.3}
 
@@ -194,9 +196,12 @@
             size_hint: 0.2, 0.1
             text: "Start"
             pos_hint: {"x": 0.1, "top":0.15}
+            on_press:
+                root.initialize()
 
         Label:
             font_size: 40
             size_hint: 0.2, 0.1
+            id: startapp
             text: "Meeting is going to start in xx:xx"
             pos_hint: {"x":0.5, "top":0.15}
