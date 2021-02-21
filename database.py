@@ -41,8 +41,7 @@ class DataBase:
         self.userlist = []
 
         if self.file != "":
-            for line in self.file:
-                self.zoomid, self.zoompassword, self.meetingid = line.split(";")
+            self.zoomid, self.zoompassword, self.meetingid = self.file.readline().split(";")
             #读取后加到my.kv的input里面,在main class里进行
 
         self.file.close()
@@ -57,4 +56,5 @@ class DataBase:
 
     def save_user(self):
         with open(self.filename, "w") as u:
-            u.write(self.userlist[0] + ";" + self.userlist[1] + ";" + self.userlist[2] + "\n")
+            u.truncate(0)
+            u.write(self.userlist[0] + ";" + self.userlist[1] + ";" + self.userlist[2])

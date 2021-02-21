@@ -1,1 +1,1 @@
-SUDO_PASSWORD = 'lishizheN778'
+SUDO_PASSWORD = ''
