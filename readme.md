@@ -1,3 +1,5 @@
+![alt text](https://github.com/Edward11235/Resources/blob/master/autozoomrecorder_logo.jpg)
+
 This project is Edward Li's Hackthon project that helps Asian students to record lectures at night.
 
 A demonstration can be found at:
